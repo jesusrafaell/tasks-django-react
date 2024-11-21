@@ -39,9 +39,9 @@ const ItemTask: React.FC<Props> = ({ task, handleDelete, handleUpdate }) => {
           <svg
             className=" w-5 h-5 text-gray-200 fill-current"
             fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
@@ -59,7 +59,7 @@ const ItemTask: React.FC<Props> = ({ task, handleDelete, handleUpdate }) => {
           Created: {formatDateTime(task.createdAt)}
         </p>
 
-        <p className="block font-sans text-md font-normal leading-normal text-gray-500 antialiased h-5">
+        <p className="block font-sans text-md font-normal leading-normal text-gray-500 antialiased h-2">
           {task.isCompleted && (
             <span>Completed: {formatDateTime(task.updatedAt)}</span>
           )}

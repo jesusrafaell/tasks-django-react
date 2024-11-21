@@ -29,7 +29,7 @@ const TaskPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="z-10 grid md:grid-cols-2 py-20 md:py-0 gap-10 md:gap-20">
+      <div className="z-10 grid md:grid-cols-2 py-20 md:py-10 gap-10 md:gap-20">
         <div className="flex justify-center items-center">
           <TaskForm />
         </div>

@@ -41,7 +41,7 @@ const TaskList: React.FC = () => {
       <h1 className="text-2xl font-poppins mb-4 text-white">Task List</h1>
       <ul
         ref={listRef}
-        className="flex flex-col space-y-4 h-[800px] overflow-y-scroll overflow-x-hidden"
+        className="flex flex-col space-y-4 h-[80vh] overflow-y-scroll overflow-x-hidden"
       >
         {tasks.map((task) => (
           <li
