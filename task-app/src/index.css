@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar {
+  width: 4px !important;
+  height: 4px !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  border-radius: 50px !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px !important;
+  background: #e0e0e0 !important;
+  min-height: 20px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e0e0e0 !important;
+}
