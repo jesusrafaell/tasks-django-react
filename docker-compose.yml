@@ -10,12 +10,8 @@ services:
       POSTGRES_USER: userdb
       POSTGRES_PASSWORD: passworddb
       POSTGRES_DB: task_app
-    # volumes:
-    #   - postgres_data:/var/lib/postgresql/data
-    # networks:
-    # - taks-network
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
 
 volumes:
   postgres_data:
-# networks:
-#   task-network:

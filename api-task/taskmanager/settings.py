@@ -1,11 +1,14 @@
 import environ
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Initialise environment
 env = environ.Env(
     DEBUG=(bool, False)
 )
 
-environ.Env.read_env()
+environ.Env.read_env(BASE_DIR / '.env')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
