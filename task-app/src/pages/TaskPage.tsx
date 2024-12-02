@@ -20,6 +20,7 @@ const TaskPage: React.FC = () => {
     }
     return blocks;
   };
+
   return (
     <div className="w-screen min-h-screen overflow-x-hidden flex justify-center">
       <div className="fixed">
@@ -29,8 +30,8 @@ const TaskPage: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="z-10 grid md:grid-cols-2 py-20 md:py-10 gap-10 md:gap-20">
-        <div className="flex justify-center items-center">
+      <div className="grid md:grid-cols-2 py-20 md:py-10 gap-10 md:gap-20">
+        <div className="flex justify-center items-center ">
           <TaskForm />
         </div>
         <TaskList />

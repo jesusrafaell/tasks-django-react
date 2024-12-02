@@ -12,6 +12,7 @@ const TaskList: React.FC = () => {
 
   React.useEffect(() => {
     fetchTasks();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   React.useEffect(() => {
@@ -21,6 +22,7 @@ const TaskList: React.FC = () => {
     } else {
       setLength(tasks.length);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tasks.length]);
 
   const scrollToTop = () => {
@@ -37,7 +39,7 @@ const TaskList: React.FC = () => {
   };
 
   return (
-    <div className="p-4 w-[450px] z-20 flex flex-col justify-center items-center transition-all duration-300">
+    <div className="p-4 w-[450px] flex flex-col justify-center items-center transition-all duration-300">
       <h1 className="text-2xl font-poppins mb-4 text-white">Task List</h1>
       <ul
         ref={listRef}
